@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/trainlogo"
+        android:label="Railway \n Reservation"
+        android:roundIcon="@drawable/trainlogo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        tools:targetApi="31">
+        <activity
+            android:name=".Activities.DetailsByAge"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.CancelTicket"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.TrainWithPassengerCount"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.PassengerList"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.TrainListActivityWithData"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.TrainListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.splashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.MainActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
